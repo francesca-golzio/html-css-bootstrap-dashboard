@@ -6,7 +6,8 @@
   <title>Bootstrap Dashboard</title>
   <!-- Link Bootstrap framework -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  
+  <!-- Import Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>  
   
@@ -31,10 +32,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Help</a>
-            </li>
-
-            
-            
+            </li>  
           </ul>
           <form class="d-flex" role="search">
             <input class="form-control me-2 bg-light " type="search" placeholder="Cerca..." aria-label="Search"/>
@@ -51,23 +49,267 @@
     <div class="container">
 
       <!-- /.Catalog Header -->
-  <div class="row py-4 justify-content-between">
-    <div class="col col-8 col-md-7">
-      <h1 class="text-start">
-        Catalogo Libri
-      </h1>
-    </div>
-    <div class="col col-4 col-md-5">
-      <button type="button" class="btn btn-primary ">
-        Aggiungi Libro
-      </button>
-      
-    </div>
-  </div>
-<!-- /.Catalog Header -->
+      <div class="row py-4 justify-content-between">
+        <div class="col col-8 col-md-7">
+          <h1 class="text-start">
+            Catalogo Libri
+          </h1>
+        </div>
+        <div class="col col-4 col-md-5">
+          <button type="button" class="btn btn-primary ">
+            Aggiungi Libro
+          </button>      
+        </div>
+      </div>
+      <!-- /.Catalog Header -->
 
       <!-- Catalog List Manager -->
-      
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          <div class="row row-12 fw-bold py-2">
+            <div class="col col-6 col-md-5">
+              Titolo
+            </div>
+            <div class="col col-md-3 d-none d-md-block flex-shrink-0">
+              Data prestito
+            </div>
+            <div class="col col-4 col-md-2">
+              Stato
+            </div>
+            <div class="col col-2 text-center">
+              Azioni
+            </div>
+          </div>
+          <div class="row row-12 py-2 text-bg-light">
+            <div class="col col-6 col-md-5">
+              I pilastri della terra
+            </div>
+            <div class="col col-md-3 d-none d-md-block">
+              -
+            </div>
+            <div class="col col-4 col-md-2">
+              <span class="badge text-bg-success">Disponibile</span>
+            </div>
+            <div class="col col-2 text-center">
+              <button class="btn btn-sm btn-outline-secondary">
+                <i class="bi bi-pencil-fill"></i>
+              </button>
+              <button class="btn btn-sm btn-outline-secondary">
+                <i class="bi bi-trash3-fill"></i>
+              </button>
+            </div>
+          </div>
+          <div class="row row-12 py-2">
+            <div class="col col-6 col-md-5">
+              I promessi sposi
+            </div>
+            <div class="col col-md-3 d-none d-md-block">
+              -
+            </div>
+            <div class="col col-4 col-md-2">
+              <span class="badge text-bg-success">Disponibile</span>
+            </div>
+            <div class="col col-2 text-center">
+              <button class="btn btn-sm btn-outline-secondary">
+                <i class="bi bi-pencil-fill"></i>
+              </button>
+              <button class="btn btn-sm btn-outline-secondary">
+                <i class="bi bi-trash3-fill"></i>
+              </button>
+            </div>
+          </div>
+          <div class="row row-12 py-2 text-bg-light">
+            <div class="col col-6 col-md-5">
+              Il signore degli anelli
+            </div>
+            <div class="col col-md-3 d-none d-md-block">
+              -
+            </div>
+            <div class="col col-4 col-md-2">
+              <span class="badge text-bg-warning text-white">In prestito</span>
+            </div>
+            <div class="col col-2 text-center">
+              <button class="btn btn-sm btn-outline-secondary">
+                <i class="bi bi-pencil-fill"></i>
+              </button>
+              <button class="btn btn-sm btn-outline-secondary">
+                <i class="bi bi-trash3-fill"></i>
+              </button>
+            </div>
+          </div>
+          <div class="row row-12 py-2">
+            <div class="col col-6 col-md-5">
+              Harry Potter e la pietra filosofale
+            </div>
+            <div class="col col-md-3 d-none d-md-block">
+              -
+            </div>
+            <div class="col col-4 col-md-2">
+              <span class="badge text-bg-success">Disponibile</span>
+            </div>
+            <div class="col col-2 text-center">
+              <button class="btn btn-sm btn-outline-secondary">
+                <i class="bi bi-pencil-fill"></i>
+              </button>
+              <button class="btn btn-sm btn-outline-secondary">
+                <i class="bi bi-trash3-fill"></i>
+              </button>
+            </div>
+          </div>
+          <div class="row row-12 py-2 text-bg-light">
+            <div class="col col-6 col-md-5">
+              Il codice Da Vinci
+            </div>
+            <div class="col col-md-3 d-none d-md-block">
+              -
+            </div>
+            <div class="col col-4 col-md-2">
+              <span class="badge text-bg-danger">Non disponibile</span>
+            </div>
+            <div class="col col-2 text-center">
+              <button class="btn btn-sm btn-outline-secondary">
+                <i class="bi bi-pencil-fill"></i>
+              </button>
+              <button class="btn btn-sm btn-outline-secondary">
+                <i class="bi bi-trash3-fill"></i>
+              </button>
+            </div>
+          </div>
+          <div class="row row-12 py-2">
+            <div class="col col-6 col-md-5">
+              Shining
+            </div>
+            <div class="col col-md-3 d-none d-md-block">
+              -
+            </div>
+            <div class="col col-4 col-md-2">
+              <span class="badge text-bg-success">Disponibile</span>
+            </div>
+            <div class="col col-2 text-center">
+              <button class="btn btn-sm btn-outline-secondary">
+                <i class="bi bi-pencil-fill"></i>
+              </button>
+              <button class="btn btn-sm btn-outline-secondary">
+                <i class="bi bi-trash3-fill"></i>
+              </button>
+            </div>
+          </div>
+          <div class="row row-12 py-2 text-bg-light">
+            <div class="col col-6 col-md-5">
+              La divina commedia
+            </div>
+            <div class="col col-md-3 d-none d-md-block">
+              -
+            </div>
+            <div class="col col-4 col-md-2">
+              <span class="badge text-bg-warning text-white">In prestito</span>
+            </div>
+            <div class="col col-2 text-center">
+              <button class="btn btn-sm btn-outline-secondary">
+                <i class="bi bi-pencil-fill"></i>
+              </button>
+              <button class="btn btn-sm btn-outline-secondary">
+                <i class="bi bi-trash3-fill"></i>
+              </button>
+            </div>
+          </div>
+          <div class="row row-12 py-2">
+            <div class="col col-6 col-md-5">
+              Il trono di spade
+            </div>
+            <div class="col col-md-3 d-none d-md-block">
+              -
+            </div>
+            <div class="col col-4 col-md-2">
+              <span class="badge text-bg-success">Disponibile</span>
+            </div>
+            <div class="col col-2 text-center">
+              <button class="btn btn-sm btn-outline-secondary">
+                <i class="bi bi-pencil-fill"></i>
+              </button>
+              <button class="btn btn-sm btn-outline-secondary">
+                <i class="bi bi-trash3-fill"></i>
+              </button>
+            </div>
+          </div>
+          <div class="row row-12 py-2 text-bg-light ">
+            <div class="col col-6 col-md-5">
+              Il mondo di Sofia
+            </div>
+            <div class="col col-md-3 d-none d-md-block">
+              -
+            </div>
+            <div class="col col-4 col-md-2">
+              <span class="badge text-bg-danger">Non disponibile</span>
+            </div>
+            <div class="col col-2 text-center">
+              <button class="btn btn-sm btn-outline-secondary">
+                <i class="bi bi-pencil-fill"></i>
+              </button>
+              <button class="btn btn-sm btn-outline-secondary">
+                <i class="bi bi-trash3-fill"></i>
+              </button>
+            </div>
+          </div>
+          <div class="row row-12 py-2">
+            <div class="col col-6 col-md-5">
+              Le cronache di Narnia: il leone, la strega e l'armadio
+            </div>
+            <div class="col col-md-3 d-none d-md-block">
+              -
+            </div>
+            <div class="col col-4 col-md-2">
+              <span class="badge text-bg-warning text-white">In prestito</span>
+            </div>
+            <div class="col col-2 text-center">
+              <button class="btn btn-sm btn-outline-secondary">
+                <i class="bi bi-pencil-fill"></i>
+              </button>
+              <button class="btn btn-sm btn-outline-secondary">
+                <i class="bi bi-trash3-fill"></i>
+              </button>
+            </div>
+          </div>
+          <div class="row row-12 py-2 text-bg-light">
+            <div class="col col-6 col-md-5">
+              Il piccolo principe
+            </div>
+            <div class="col col-md-3 d-none d-md-block">
+              -
+            </div>
+            <div class="col col-4 col-md-2">
+              <span class="badge text-bg-success">Disponibile</span>
+            </div>
+            <div class="col col-2 text-center">
+              <button class="btn btn-sm btn-outline-secondary">
+                <i class="bi bi-pencil-fill"></i>
+              </button>
+              <button class="btn btn-sm btn-outline-secondary">
+                <i class="bi bi-trash3-fill"></i>
+              </button>
+            </div>
+          </div>
+          <div class="row row-12 py-2">
+            <div class="col col-6 col-md-5">
+              La storia infinita
+            </div>
+            <div class="col col-md-3 d-none d-md-block">
+              -
+            </div>
+            <div class="col col-4 col-md-2">
+              <span class="badge text-bg-success">Disponibile</span>
+            </div>
+            <div class="col col-2 text-center">
+              <button class="btn btn-sm btn-outline-secondary">
+                <i class="bi bi-pencil-fill"></i>
+              </button>
+              <button class="btn btn-sm btn-outline-secondary">
+                <i class="bi bi-trash3-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- /.Catalog List Manager -->
       
       <!-- Widgets -->
