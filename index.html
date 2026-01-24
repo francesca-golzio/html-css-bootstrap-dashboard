@@ -39,7 +39,7 @@
             </li>
           </ul>
           <form class="d-flex" role="search">
-            <input class="form-control me-2 bg-light " type="search" placeholder="Cerca..." aria-label="Search" >
+            <input class="form-control me-2 bg-light " type="search" placeholder="Cerca..." aria-label="Search">
             <button class="btn btn-outline-light" type="submit">Cerca</button>
           </form>
         </div>
@@ -62,7 +62,7 @@
               </h1>
             </div>
             <div class="col col-4 col-md-5">
-              <a href="./add-book.html" class="btn btn-primary" >
+              <a href="./add-book.html" class="btn btn-primary">
                 Aggiungi Libro
               </a>
             </div>
@@ -322,7 +322,7 @@
 
         <!-- Widgets -->
         <div class="col col-12 col-lg-3 py-4">
-          
+
           <div class="card text-bg-light d-flex flex-column">
             <h2 class="card-header">
               Todo
@@ -330,19 +330,22 @@
             <div class="card-body">
               <ul class="list-group">
                 <li class="list-group-item">
-                  <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for todo list item">
+                  <input class="form-check-input mt-0" type="checkbox" value=""
+                    aria-label="Checkbox for todo list item">
                   <span>
                     Chiamare segreteria
                   </span>
                 </li>
                 <li class="list-group-item">
-                  <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for todo list item">
+                  <input class="form-check-input mt-0" type="checkbox" value=""
+                    aria-label="Checkbox for todo list item">
                   <span>
                     Mandare avvisi prestiti scaduti
                   </span>
                 </li>
                 <li class="list-group-item">
-                  <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for todo list item">
+                  <input class="form-check-input mt-0" type="checkbox" value=""
+                    aria-label="Checkbox for todo list item">
                   <span>
                     Ordinare nuovi libri
                   </span>
@@ -350,35 +353,56 @@
               </ul>
             </div>
           </div>
-          
+
           <div class="card text-bg-light">
             <h2 class="card-header">
               F.A.Q.
             </h2>
-            <div class="card-body dropdown">
-              <button class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">
-                Come aggiungere un nuovo libro?
-              </button>
-            </div>
+            <div class="card-body ">
+              <!-- ACCORDION -->
+              <div class="accordion accordion-flush" id="accordion_widget">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Come aggiungere un nuovo libro?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordion_widget">
+                    <div class="accordion-body">Premi sul pulsante "Aggiungi Libro"...</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Come posso accedere all'anagrafica utenti?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion_widget">
+                    <div class="accordion-body">Utilizza il menù...</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Posso usare questa dashboard da mobile?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion_widget">
+                    <div class="accordion-body">Bla bla bla...</div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.ACCORDION -->
 
-            <div class="card-body dropdown">
-              <button class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">
-                Come posso accedere all'anagrafica utenti?
-              </button>
-            </div>
-
-            <div class="card-body dropdown">
-              <button class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">
-                Posso usare questa dashboard da mobile?
-              </button>
             </div>
 
           </div>
-           
-        </div>
-        <!-- /.Widgets -->
+          <!-- /.Widgets -->
 
-      </div>
+        </div>
   </main>
   <!-- /. Main -->
 
